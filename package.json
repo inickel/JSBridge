@@ -8,7 +8,6 @@
     "build": "webpack -p lib/index.js dist/bridge.js",
     "test": "mocha test -c",
     "browser": "browser-sync start --server --startPath ./example --port 4888 --files ./example/*.html,./dist/*.js",
-    "serve-demo": "serve .",
     "docs": "jsdoc lib/bridge.js -d docs"
   },
   "devDependencies": {
