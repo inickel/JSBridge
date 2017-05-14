@@ -1,0 +1,28 @@
+{
+  "name": "JSBridge",
+  "version": "1.0.0",
+  "private": false,
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --watch lib/index.js dist/bridge.js",
+    "build": "webpack -p lib/index.js dist/bridge.js",
+    "test": "mocha test -c",
+    "browser": "browser-sync start --server --startPath ./example --port 4888 --files ./example/*.html,./dist/*.js",
+    "serve-demo": "serve .",
+    "docs": "jsdoc lib/bridge.js -d docs"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "chai": "^3.5.0",
+    "jsdoc": "^3.4.3",
+    "mocha": "^3.2.0",
+    "serve": "^5.1.1",
+    "webpack": "^1.14.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inickel/JSBridge.git"
+  },
+  "author": "inickel",
+  "license": "ISC"
+}
